@@ -39,15 +39,27 @@ XOON
 
 #### client
 
+SlackやGoogle Homeなど, 外部から呼び出すサービス
+
 #### API Gateway
+
+clientのリクエストを判定して, **Asynchronus Messaging Service** にイベントの登録をリクエストする
 
 ### Services
 
 #### Asynchronus Messaging Service
 
+**API Gateway** からイベント登録のリクエストを受け取り, 登録できたら **API Gateway** にレスポンスを返す.
+**Asynchronus Messaging Service** は一定間隔で溜まっているイベントを各サービスに依頼する. 
+
 #### k8s Manager Service
+
+Kubernetes のポッドなどを管理するサービス. 
 
 #### Slack Service
 
+Slackにメッセージを送るサービス. 
+
 #### Kintai Service
 
+勤怠管理サービス. 
