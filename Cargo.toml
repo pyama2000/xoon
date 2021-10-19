@@ -4,8 +4,6 @@ version = "0.1.0"
 edition = "2018"
 
 [dependencies]
-axum = "0.2.8"
-envy = "0.4"
-hyper = "0.14"
-serde = { version = "1.0", features = ["derive"] }
-tokio = { version = "1.0", features = ["full"] }
+
+[workspace]
+members = ["api-gateway", "async-message", "k8s-manager", "slack", "kintai"]

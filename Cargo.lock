@@ -12,6 +12,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "api-gateway"
+version = "0.1.0"
+dependencies = [
+ "axum",
+ "envy",
+ "hyper",
+ "serde",
+ "tokio",
+]
+
+[[package]]
+name = "async-message"
+version = "0.1.0"
+
+[[package]]
 name = "async-trait"
 version = "0.1.51"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -218,6 +233,14 @@ name = "itoa"
 version = "0.4.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b71991ff56294aa922b450139ee08b3bfc70982c6b2c7562771375cf73542dd4"
+
+[[package]]
+name = "k8s-manager"
+version = "0.1.0"
+
+[[package]]
+name = "kintai"
+version = "0.1.0"
 
 [[package]]
 name = "lazy_static"
@@ -480,6 +503,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "slack"
+version = "0.1.0"
+
+[[package]]
 name = "smallvec"
 version = "1.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -682,10 +709,3 @@ checksum = "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f"
 [[package]]
 name = "xoon"
 version = "0.1.0"
-dependencies = [
- "axum",
- "envy",
- "hyper",
- "serde",
- "tokio",
-]
